@@ -1,12 +1,11 @@
-const { mergeConfig } = require('vite');
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-module.exports = (config) => {
-  // Important: always return the modified config
-  return mergeConfig(config, {
-    resolve: {
-      alias: {
-        '@': '/src',
-      },
+export default defineConfig({
+  plugins: [react({})],
+  resolve: {
+    alias: {
+      '@': '/src',
     },
-  });
-};
+  },
+});
