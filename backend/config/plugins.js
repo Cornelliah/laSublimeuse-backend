@@ -17,7 +17,7 @@ module.exports = ({ env }) => ({
         api_secret: env('CLOUDINARY_SECRET'),
       },
       actionOptions: {
-        upload: {},
+        upload: {responsive_dimensions: false,},
         delete: {},
       },
       breakpoints: { 
