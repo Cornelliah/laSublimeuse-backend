@@ -1,5 +1,3 @@
-console.log('Provider upload-cloudinary loaded');
-
 'use strict';
 
 const cloudinary = require('cloudinary').v2;
@@ -18,7 +16,7 @@ module.exports = {
         return new Promise((resolve, reject) => {
           const uploadStream = cloudinary.uploader.upload_stream(
             {
-              folder: 'strapi-uploads',
+              folder: 'strapi-uploads', 
               resource_type: 'image',
             },
             async (err, result) => {
@@ -26,10 +24,8 @@ module.exports = {
                 return reject(err);
               }
 
-              // URL originale
               file.url = result.secure_url;
 
-             
               file.formats = {
                 thumbnail: {
                   url: cloudinary.url(result.public_id, { width: 200, height: 200, crop: 'fill' }),
