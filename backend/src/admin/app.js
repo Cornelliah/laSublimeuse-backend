@@ -2,13 +2,13 @@
 export default {
   config: {
     auth: {
-      logo: '/lg.png',
+      logo: '../../public/uploads/lg.png',
     },
     menu: {
-      logo: '/lg.png',
+      logo: '../../public/uploads/lg.png',
     },
     head: {
-      favicon: '/lg.png',
+      favicon: '../../public/uploads/lg.png',
     },
   },
   bootstrap(app) {
