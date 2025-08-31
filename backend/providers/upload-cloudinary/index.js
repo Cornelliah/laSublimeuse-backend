@@ -1,3 +1,5 @@
+console.log('Provider upload-cloudinary loaded');
+
 'use strict';
 
 const cloudinary = require('cloudinary').v2;
