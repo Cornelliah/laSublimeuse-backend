@@ -20,7 +20,6 @@
     "@strapi/plugin-cloud": "5.23.1",
     "@strapi/plugin-users-permissions": "5.23.1",
     "@strapi/provider-upload-cloudinary": "^5.23.1",
-    "my-upload-cloudinary": "./src/extensions/upload/providers/upload-cloudinary/index.js",
     "@strapi/strapi": "5.23.1",
     "better-sqlite3": "11.3.0",
     "fs-extra": "^10.0.0",
